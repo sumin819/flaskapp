@@ -1,0 +1,19 @@
+name: Python application
+
+on:
+  push:
+    branches: [ python-ci-workflow ]
+  pull_request:
+    branches: [ python-ci-workflow ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.8"
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
