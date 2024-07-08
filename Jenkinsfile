@@ -19,7 +19,7 @@ pipeline {
 		}
 		stage("Build") {
 			steps {
-				sh 'docker build -t flaskjenkins:v1.0.0 .'
+				sh 'docker build -t flaskapp:v1.0.0 .'
 			}
 		}
 		stage("test") {
