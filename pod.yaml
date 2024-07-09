@@ -8,3 +8,5 @@ spec:
     image: sumin819/flaskapp:latest
     ports:
     - containerPort: 5000
+  imagePullSecrets:
+  -name: sumin819
