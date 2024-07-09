@@ -4,7 +4,7 @@ metadata:
   name: flaskpod
 spec:
   containers:
-  - name: flask
+  - name: flaskapp
     image: sumin819/flaskapp:v2.0.0
     ports:
     - containerPort: 80
