@@ -9,4 +9,4 @@ spec:
     ports:
     - containerPort: 5000
   imagePullSecrets:
-  -name: sumin819
+  - name: docker-pull-secret
